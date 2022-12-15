@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operations</title>
+        
+        <style>
+            #bu{
+                width: 90px;
+                height: 60px;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Perform Operation</h1>
+        <p>Enter First Number : <input type="text" id="var1"></p>
+        <p>Enter Second Number : <input type="text" id="var2"></p>
+        <button onclick="add()" id="bu">+</button>
+        <button onclick="sub()" id="bu">-</button>
+        <button onclick="mul()" id="bu">*</button>
+        <button onclick="divide()" id="bu">/</button>
+        
+        <script>
+           
+            function add(){
+                x=document.getElementById("var1").value;
+                y=document.getElementById("var2").value;
+                x=Number(x);
+                y=Number(y);
+                alert(x+y);
+            }
+            function sub(){
+                var x=document.getElementById("var1").value;
+                var y=document.getElementById("var2").value;
+                alert(x-y);
+            }
+            function mul(){
+                var x=document.getElementById("var1").value;
+                var y=document.getElementById("var2").value;
+                alert(x*y);
+            }
+            function divide(){
+                var x=document.getElementById("var1").value;
+                var y=document.getElementById("var2").value;
+                alert(x/y);
+            }
+        </script>
+
+    </body>
+</html>
