@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter</title>
+        
+        <style>
+            #bu{
+                width: 90px;
+                height: 60px;
+                font-size: 30px;
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Counter</h1>
+        <button onclick="inc()" id="bu">+</button>
+        <h2 id="demo">0</h2>
+        <button onclick="dec()" id="bu">-</button>
+        
+
+        <script>
+            var x=document.getElementById("demo").innerHTML;
+
+            function inc(){
+               x++;
+               document.getElementById("demo").innerHTML=x;
+            }
+            function dec(){
+               x--;
+               document.getElementById("demo").innerHTML=x;
+            }
+        </script>
+
+    </body>
+</html>
