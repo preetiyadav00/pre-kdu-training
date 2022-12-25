@@ -1,0 +1,59 @@
+create database employee;
+
+show databases;
+
+use employee;
+
+create table department (
+     department_id int NOT NULL PRIMARY KEY,
+     department_name varchar(30)
+     );
+
+desc department;
+
+create table employee(
+     employee_id int PRIMARY KEY,
+     employee_name varchar(30) NOT NULL,
+     salary float,
+     department_id int,
+     FOREIGN KEY (department_id) REFERENCES department(department_id)
+     );
+
+desc employee;
+
+insert into department values(1,'dept1');
+
+insert into employee values (1,'emp1',1000.00,1);
+insert into employee values (2,'emp2',1000.50,1);
+
+
+select employee_id,employee_name,department_name
+     from department
+     INNER JOIN employee
+     on department.department_id = employee.department_id;
+
+
+select employee_id,employee_name,salary from employee order by salary desc;
+
+
+insert into department values(2,'dept2');
+insert into department values(3,'dept3');
+insert into department values(4,'dept4');
+
+insert into employee values (3,'emp3',5000.50,2);
+insert into employee values (4,'emp4',6000.50,4);
+insert into employee values (5,'emp5',6090.50,2);
+
+select department.department_name,avg(employee.salary) from
+     department,employee
+     where department.department_id=employee.department_id
+     group by employee.department_id;
+
+or 
+
+select department_name, avg(salary) as average_salary
+     from department
+     INNER JOIN
+     employee
+     on department.department_id=employee.department_id
+     group by employee.department_id;
