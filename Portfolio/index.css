@@ -1,0 +1,116 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+ 
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222;
+  }
+  
+  #n {
+    float: left;
+  }
+  
+ #n a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:larger;
+  }
+  
+  #n a:hover {
+    background-color: #111;
+  }
+
+.he {
+    text-align:center;    
+    color:white;  
+    border-radius: 20px;
+    background-color:#333;
+    padding: 20px;
+    width:80%;
+    border: 2px solid black;
+    margin-left:90px;
+   margin-bottom:1px;
+   margin-right:10px;
+}
+.foo {
+    text-align:center;    
+    color:white;  
+    border-radius: 0px;
+    background-color:#333;
+    padding: 20px;
+    width:100%;
+    border: 0px solid black;
+    margin-left:0px;
+   margin-bottom:0px;
+   margin-right:0px;
+}
+img.self{
+    border-radius: 50%;
+}
+
+.centerdiv{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#aa{
+    height:100px;
+    width:100px;
+    background-color: #f5f6fa;
+    border-radius:50px;
+    text-align:center;
+    margin:10px;
+    line-height:110px;
+    box-shadow:1px 4px 2px 2px #dcdde1;
+}
+#aa i{
+    transition: all 0.3s linear;
+}
+#aa:hover i{
+    transform: scale(1.4);
+}
+.fa-linkedin{
+    color: #0A66C2;
+}
+.fa-github{
+    color: #111;
+}
+.fa-envelope{
+    color: rgb(78, 250, 10);
+}
+.fa-instagram{
+    color: #860655;
+}
+.pp{
+    font-size:large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+
+background-color:whitesmoke;
+margin:0%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+
+
